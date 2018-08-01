@@ -1,0 +1,14 @@
+.assignment-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+label {
+  display: block;
+}
+input {
+  margin-bottom: 1.5em;
+}
+#submit {
+  display: block;
+  padding: .75em;
+}
