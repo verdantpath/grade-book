@@ -1,0 +1,32 @@
+<!DOCTYPE = html>
+<html>
+<head>
+  <title>Grade Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="main-content">
+    <h1>Grade Book</h1>
+    <form class="grade-entry">
+      <label for="assignment-title">Assignment Title</label>
+      <input type="text" name="assignment-title" id="assignment-title">
+      <label for="points-possible">Points Possible</label>
+      <input type="text" name="points-possible" id="points-possible">
+      <label for="points-received">Points Received</label>
+      <input type="text" name="points-received" id="points-received">
+      <button id="submit">Add Entry</button>
+    </form>
+    <div class="grade-table">
+    <h2>Assignments</h2>
+    <div class="assignment-container">
+      <h3>Assignment Title</h3>
+      <p class="points-possible">Points Possible</p>
+      <p class="points-received">Points Received</p>
+    </div>
+    </div>
+    <!--end grade-table-->
+  </section>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
