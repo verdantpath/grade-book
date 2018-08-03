@@ -4,13 +4,13 @@ const pointsReceivedField = document.getElementById('points-received');
 const btnAddEntry = document.getElementById('submit');
 
 const addEntry = (e) => {
-  e.preventDefault;
+  e.preventDefault();
   console.log('function addEntry called');
   var gradeEntry = {
     assignmentTitle: assignmentTitleField.value,
     pointsPossible: pointsPossibleField.value,
     pointsReceived: pointsReceivedField.value,
-    gradePercentage: function() {
+    gradePercentage: () => {
       return  gradeEntry.pointsReceived / gradeEntry.pointsPossible;
     }
   };
