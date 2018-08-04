@@ -3,8 +3,8 @@ const pointsPossibleField = document.getElementById('points-possible');
 const pointsReceivedField = document.getElementById('points-received');
 const btnAddEntry = document.getElementById('submit');
 
-const addEntry = (e) => {
-  e.preventDefault();
+const addEntry = (event) => {
+  event.preventDefault();
   console.log('function addEntry called');
   var gradeEntry = {
     assignmentTitle: assignmentTitleField.value,
