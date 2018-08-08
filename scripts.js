@@ -21,8 +21,8 @@ const addEntry = (event) => {
   console.log(gradeEntry.pointsPossible);
   console.log(gradeEntry.pointsReceived);
   console.log(gradeEntry.gradePercentage());
-  var output = '<div class="assignment-container"></div>';
-  outputContainer.innerHTML = output;
+  // var output = '<div class="assignment-container"></div>';
+  // outputContainer.innerHTML = output;
 }
 
 btnAddEntry.addEventListener('click', addEntry);
