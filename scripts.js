@@ -1,19 +1,22 @@
-const assignmentTitleField = document.getElementById('assignment-title');
-const pointsPossibleField = document.getElementById('points-possible');
-const pointsReceivedField = document.getElementById('points-received');
+const fieldAssignmentTitle = document.getElementById('assignment-title');
+const fieldPointsPossible = document.getElementById('points-possible');
+const fieldPointsReceived = document.getElementById('points-received');
 const btnAddEntry = document.getElementById('submit');
 const outputContainer = document.getElementById('grade-table');
-let gradeAverage = document.getElementById('grade-average');
+const gradeAverageContainer = document.getElementById('grade-average');
+let gradeAverage = () => {
+
+};
 
 const addEntry = (event) => {
   event.preventDefault();
-  
+
   let gradeEntry = {
-    assignmentTitle: assignmentTitleField.value,
-    pointsPossible: pointsPossibleField.value,
-    pointsReceived: pointsReceivedField.value,
+    assignmentTitle: fieldAssignmentTitle.value,
+    pointsPossible: fieldPointsPossible.value,
+    pointsReceived: fieldPointsReceived.value,
     gradePercentage: () => {
-      return  (gradeEntry.pointsReceived / gradeEntry.pointsPossible) * 100 + '%';
+      return  Math.ceil((gradeEntry.pointsReceived / gradeEntry.pointsPossible) * 100) + '%';
     }
   };
 
@@ -29,6 +32,6 @@ const addEntry = (event) => {
   assignmentContainer.innerHTML = output;
   outputContainer.appendChild(assignmentContainer);
 
-}
+};
 
 btnAddEntry.addEventListener('click', addEntry);
