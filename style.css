@@ -12,3 +12,24 @@ input {
   display: block;
   padding: .75em;
 }
+.column-1 {
+  width: 40%;
+  display: inline-block;
+  float: left;
+
+}
+.column-2,
+.column-3,
+.column-4 {
+  width: 20%;
+  display: inline-block;
+  float: left;
+}
+#grade-table {
+  max-width: 640px;
+}
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: '';
+}
