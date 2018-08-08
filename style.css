@@ -1,6 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.assignments-header {
+  margin-bottom: 25px;
+}
 .assignment-container {
-  border: 1px solid #ddd;
-  padding: 10px;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 10px 0;
+  margin-bottom: 10px
+}
+#grade-table {
+  max-width: 640px;
+}
+#grade-average {
+  max-width: 640px;
+  text-align:right;
 }
 label {
   display: block;
@@ -25,11 +44,9 @@ input {
   display: inline-block;
   float: left;
 }
-#grade-table {
-  max-width: 640px;
-}
-.clearfix:after {
-  display: table;
-  clear: both;
-  content: '';
+.points-possible,
+.points-received,
+.assignment-grade {
+  text-align: right;
+  padding: 0 5px;
 }
