@@ -37,8 +37,15 @@ const addEntry = (event) => {
   assignmentContainer.className = 'assignment-container clearfix';
   assignmentContainer.innerHTML = output;
   outputContainer.appendChild(assignmentContainer);
+  
   gradeAverage.push(gradeEntry.gradePercentage());
   gradeAverageContainer.innerHTML = gradeAverageCalculator();
+
+  let inputs = document.querySelectorAll('.grade-entry input');
+  for (let i = 0; i < inputs.length; i++) {
+    inputs[i].value = '';
+  }
+
 };
 
 btnAddEntry.addEventListener('click', addEntry);
